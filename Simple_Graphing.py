@@ -47,7 +47,7 @@ def fig_update(data):
     axes = fig.axes
     x = [i[0] for i in data]
     y = [int(i[1]) for i in data]
-    axes[0].plot(x,y, "r-")
+    axes[0].plot(x,y, "ro-")
     figure_canvas.draw()
     figure_canvas.get_tk_widget().pack()
 

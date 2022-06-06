@@ -15,20 +15,21 @@ layout = [
     expand_x=True, 
     hide_vertical_scroll=True,
     key = "-TABLE-")],
-    
+
     # Adding button and input field
-    [sg.Input(key = "-INPUT-", 
+    [sg.Input(key = "-INPUT-",
     expand_x=True, 
     do_not_clear=False
     ),
     sg.Button("Submit")],
 
     [sg.Canvas(key = "-CANVAS-")],
-
     # TODO: add bar and pie chart options
     [sg.DropDown(["Line", "Bar", "Pie"], 
     default_value="Line", 
     expand_x=True)]
+    
+    
 ]
 
 # Initializing the window
